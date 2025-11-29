@@ -1,10 +1,21 @@
+:root{
+--bg-h: 200;
+--bg-s: 70%;
+--bg-l: 40%;
+--fg: #fff;
+}
+
 body {
       text-align: center;
       margin-top: 50px;
       font-family: "Inter", sans-serif;
       font-optical-sizing: auto;
       font-style: normal;
+      /* background:hsl(var(--bg-h), var(--bg-s), var(--bg-l)); */
+      color:var(--fg);
+      transition: background 0.8s ease;
     }
+
 
     .title {
       font-size: 36px;
@@ -56,16 +67,16 @@ body {
     #days-count, #weeks-count, #months-count {
       font-size: 48px;
       font-weight: bold;
-      color: #ff5733;
+      color: #16a085;
       display: block;
       margin-top: 20px;
     }
 
     #weeks-count {
-      color: #03ff74;
+      color: #2c3e50;
     }
 
     #months-count {
-      color: #f302cb;
+      color: #c0392b;
     }
     
