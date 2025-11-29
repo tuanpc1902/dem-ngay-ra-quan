@@ -1,43 +1,44 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Đếm ngược thời gian</title>
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="styles.css">
-  <script src="moment.min.js"></script>
-  <script src="moment-with-locales.min.js"></script>
-  <!-- <script src="
-https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js
-"></script>
-<link href="
-https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css
-" rel="stylesheet"> -->
-<script src="https://cdnjs.com/libraries/bootstrap-datetimepicker/4.17.37"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đếm ngược thời gian</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="moment.min.js"></script>
+    <script src="moment-with-locales.min.js"></script>
+    <script src="https://cdnjs.com/libraries/bootstrap-datetimepicker/4.17.37"></script>
+  </head>
+  <body>
+    <div class="title">Bao lâu đến ngày <span id="ngayRaQuan"></span></div>
+    <div class="datepicker">
+      <span class="selectDateLabel">Chọn ngày</span>
+      <input id="ngayRaQuanDatePicker" class="form-control" type="date" />
+    </div>
 
-  <div class="title">Bao lâu cho đến ngày <span id="ngayRaQuan"></span></div>
+    <div class="timeZone"></div>
 
+    <span class="subTitle">Còn</span>
 
-  <!-- <label for="ngayRaQuan"></label> -->
-  <input id="ngayRaQuanDatePicker" class="form-control" type="date" />
+    <div class="result">
+      <div id="days-count"></div>
+      <div id="weeks-count"></div>
+      <div id="months-count"></div>
+    </div>
 
+    <iframe
+      src="https://iptv11-my.sharepoint.com/personal/phuocit_iptv11_onmicrosoft_com/_layouts/15/embed.aspx?UniqueId=e505a4a8-57f1-447e-945d-0844b88fc00e"
+      width="640"
+      height="360"
+      frameborder="0"
+      scrolling="no"
+      allowfullscreen
+      title="AIO Soft 2024 v6.6"
+    ></iframe>
 
-  <div class="timeZone"></div>
-  <span class="subTitle">Còn</span>
-
-  <div id="days-count"></div>
-  <div id="weeks-count"></div>
-  <div id="months-count"></div>
-  
-<iframe src="https://iptv11-my.sharepoint.com/personal/phuocit_iptv11_onmicrosoft_com/_layouts/15/embed.aspx?UniqueId=e505a4a8-57f1-447e-945d-0844b88fc00e" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="AIO Soft 2024 v6.6"></iframe>
-  <!-- viết hàm tính toán và hiển thị kết quả ở đây -->
-  <script src="main.js"></script>
-  <script>
-
-
-    </script>
-</body>
+    <!-- viết hàm tính toán và hiển thị kết quả ở đây -->
+    <script src="main.js"></script>
+    <script></script>
+  </body>
 </html>
