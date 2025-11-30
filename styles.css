@@ -10,10 +10,6 @@ body {
   margin-top: 50px;
   font-family: 'Inter', sans-serif;
   font-optical-sizing: auto;
-  font-style: normal;
-  /* background:hsl(var(--bg-h), var(--bg-s), var(--bg-l)); */
-  color: var(--fg);
-  transition: background 0.8s ease;
 }
 
 .title {
@@ -23,7 +19,7 @@ body {
 }
 
 .datepicker {
-  margin-top: 30px;
+  margin-top: 20px;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -49,7 +45,7 @@ body {
 
 .subTitle {
   font-size: 1rem;
-  margin-top: 30px;
+  margin-top: 20px;
   display: block;
   color: gray;
 }
@@ -79,4 +75,15 @@ body {
 
 #months-count {
   color: #c0392b;
+}
+
+.today {
+  margin-top: 30px;
+  font-size: 18px;
+  color: #130f40;
+}
+
+.clock {
+  margin-top: 10px;
+  color: #eb4d4b;
 }
