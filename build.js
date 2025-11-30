@@ -34,12 +34,12 @@ esbuild.build({
   entryPoints: ['./assets/style.css'],
   bundle: true,
   minify: true,
-  outfile: 'dist/assets/style.min.css',
+  outfile: 'dist/assets/style.css',
 });
 
 esbuild.build({
   entryPoints: ['./assets/main.css'],
   bundle: true,
   minify: true,
-  outfile: 'dist/assets/main.min.css',
+  outfile: 'dist/assets/main.css',
 });
