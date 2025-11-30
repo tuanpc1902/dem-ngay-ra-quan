@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đếm ngược thời gian</title>
+    <link rel="stylesheet" href="./asets/main.min.css" />
+    <link rel="stylesheet" href="./asets/style.min.css" />
+    <script src="moment.min.js"></script>
+    <script src="moment-with-locales.min.js"></script>
+  </head>
+  <body>
+    <div class="title">Bao lâu đến ngày <span id="ngayRaQuan"></span></div>
+    <div class="datepicker">
+      <span class="selectDateLabel">Chọn ngày</span>
+      <input id="ngayRaQuanDatePicker" class="form-control" type="date" />
+    </div>
+
+    <div class="timeZone"></div>
+
+    <span class="subTitle">Còn</span>
+
+    <div class="result">
+      <div id="days-count"></div>
+      <div id="weeks-count"></div>
+      <div id="months-count"></div>
+    </div>
+
+    <div class="today">
+      <span id="date"></span>
+      <span id="pipe">| </span>
+      <span id="time" class="clock"></span>
+      <span id="timezone"></span>
+    </div>
+
+    <!-- viết hàm tính toán và hiển thị kết quả ở đây -->
+    <script src="./main.min.js"></script>
+    <script></script>
+  </body>
+</html>
