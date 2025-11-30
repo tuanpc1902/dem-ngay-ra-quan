@@ -68,7 +68,7 @@ function startRealtimeClock() {
   moment.locale('vi');
 
   // Hiển thị múi giờ 1 lần
-  elZone.textContent = `Múi giờ: ${zone_name}`;
+  // elZone.textContent = `Múi giờ: ${zone_name}`;
 
   setInterval(() => {
     const now = moment();

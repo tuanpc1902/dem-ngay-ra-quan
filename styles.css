@@ -111,7 +111,8 @@ body {
 /* -------------------- */
 .today {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   gap: 4px;
   font-size: 16px;
   padding: 8px;
@@ -176,7 +177,7 @@ body {
     font-size: 30px;
   }
   .today {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     gap: 10px;
   }
