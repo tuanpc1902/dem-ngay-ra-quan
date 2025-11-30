@@ -181,6 +181,10 @@ body {
     justify-content: center;
     gap: 10px;
   }
+
+  #pipe {
+    display: none;
+  }
 }
 
 /* Màn nhỏ 320px (iPhone SE, Android đời cũ) */
