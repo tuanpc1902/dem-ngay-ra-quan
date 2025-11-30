@@ -62,7 +62,7 @@ function capitalizeWeekday(str) {
 function startRealtimeClock() {
   const elDate = document.getElementById('date');
   const elTime = document.getElementById('time');
-  const elZone = document.getElementById('timezone');
+  const elPipe = document.getElementById('pipe');
 
   // Chọn locale tiếng Việt
   moment.locale('vi');
@@ -77,6 +77,7 @@ function startRealtimeClock() {
     const capitalizedDateString = capitalizeWeekday(dateString);
     // Ngày + thứ
     elDate.textContent = capitalizedDateString;
+    elPipe.textContent = ' | ';
 
     // Giờ – phút – giây
     elTime.textContent = now.format('HH [giờ] mm [phút] ss [giây]');
