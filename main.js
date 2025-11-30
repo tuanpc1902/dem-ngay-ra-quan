@@ -37,16 +37,52 @@ function reloadCounts() {
     moment(ngayRaQuanDateVal).diff(moment(), 'months') + ' tháng';
 }
 
+function formatThoiGianTheoTheThuc() {
+  return moment().format('LLLL_custom');
+}
+
+function capitalizeWeekday(str) {
+  if (!str) return '';
+
+  // Lấy phần từ thứ (tính đến dấu phẩy)
+  const parts = str.split(',');
+  const weekday = parts[0].trim();
+
+  // Viết hoa chữ cái đầu
+  const capitalized = weekday.charAt(0).toUpperCase() + weekday.slice(1);
+
+  // Nối lại với phần còn lại của chuỗi
+  if (parts.length > 1) {
+    return capitalized + ',' + parts.slice(1).join(',');
+  } else {
+    return capitalized;
+  }
+}
+
 function startRealtimeClock() {
-  const el = document.querySelector('.today');
+  const elDate = document.getElementById('date');
+  const elTime = document.getElementById('time');
+  const elZone = document.getElementById('timezone');
+
+  // Chọn locale tiếng Việt
+  moment.locale('vi');
+
+  // Hiển thị múi giờ 1 lần
+  elZone.textContent = `Múi giờ: ${zone_name}`;
 
   setInterval(() => {
-    el.innerHTML = `Hôm nay là: ` + `<span class="clock">${moment().format('LLLL:ss')}</span> - Múi giờ: ${zone_name}`;
-    console.log('Current time in ' + zone_name + ' is: ' + moment().format('LLLL:ss'));
-  }, 1000); // cập nhật mỗi 1 giây
+    const now = moment();
+
+    const dateString = now.format('dddd, DD [tháng] MM [năm] YYYY');
+    const capitalizedDateString = capitalizeWeekday(dateString);
+    // Ngày + thứ
+    elDate.textContent = capitalizedDateString;
+
+    // Giờ – phút – giây
+    elTime.textContent = now.format('HH [giờ] mm [phút] ss [giây]');
+  }, 1000);
 }
 
 startRealtimeClock();
-
 
 reloadCounts();
