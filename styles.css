@@ -8,41 +8,49 @@
 body {
   text-align: center;
   margin-top: 50px;
+  padding: 0 15px;
   font-family: 'Inter', sans-serif;
   font-optical-sizing: auto;
 }
 
+/* Tiêu đề */
 .title {
   font-size: 36px;
   font-weight: 600;
   color: rgb(224, 24, 108);
 }
 
+/* Chọn ngày */
 .datepicker {
   margin-top: 20px;
   justify-content: center;
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .selectDateLabel {
   margin-right: 15px;
   color: #333333;
+  font-size: 20px;
 }
 
 #ngayRaQuanDatePicker {
   font-size: 20px;
-  padding: 10px;
+  padding: 10px 14px;
   border-radius: 5px;
   border: 1px solid #ccc;
+  min-width: 220px;
 }
 
+/* Múi giờ */
 .timeZone {
   font-size: 18px;
   margin-top: 10px;
   color: #555555;
 }
 
+/* “Còn” */
 .subTitle {
   font-size: 1rem;
   margin-top: 20px;
@@ -50,40 +58,97 @@ body {
   color: gray;
 }
 
+/* Kết quả */
 .result {
   display: flex;
   justify-content: center;
+  margin-top: 10px;
+  gap: 25px;
+  flex-wrap: wrap;
 }
 
 .result > div {
-  margin: 0 20px;
+  margin: 0 10px;
 }
 
+/* Số bộ đếm */
 #days-count,
 #weeks-count,
 #months-count {
   font-size: 48px;
   font-weight: bold;
-  color: #16a085;
   display: block;
   margin-top: 20px;
 }
 
-#weeks-count {
-  color: #2c3e50;
-}
+#days-count { color: #16a085; }
+#weeks-count { color: #2c3e50; }
+#months-count { color: #c0392b; }
 
-#months-count {
-  color: #c0392b;
-}
-
+/* Hôm nay */
 .today {
   margin-top: 30px;
   font-size: 18px;
   color: #130f40;
 }
 
+/* Giây */
 .clock {
   margin-top: 10px;
   color: #eb4d4b;
+}
+
+/* ----------------------------------------- */
+/* RESPONSIVE */
+/* ----------------------------------------- */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .title {
+    font-size: 30px;
+  }
+
+  #days-count,
+  #weeks-count,
+  #months-count {
+    font-size: 38px;
+  }
+
+  .selectDateLabel {
+    margin-bottom: 5px;
+  }
+
+  .datepicker {
+    flex-direction: column;
+  }
+}
+
+/* Mobile nhỏ */
+@media (max-width: 480px) {
+  body {
+    margin-top: 30px;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+
+  #ngayRaQuanDatePicker {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  #days-count,
+  #weeks-count,
+  #months-count {
+    font-size: 32px;
+  }
+
+  .result {
+    gap: 10px;
+  }
+
+  .today {
+    font-size: 16px;
+  }
 }
