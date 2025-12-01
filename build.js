@@ -16,12 +16,12 @@ if (!fs.existsSync("dist/lib")) {
 // 👉 1) Copy index.html từ project → dist
 let html = fs.readFileSync("index.html", "utf8");
 
-let video = fs.readFileSync("./assets/video_cstt.MOV", "utf8");
+let video = fs.readFileSync("./assets/video_cstt.MOV");
 
 let moment_locale = fs.readFileSync("./lib/moment-with-locales.min.js", "utf8");
 
 let moment = fs.readFileSync("./lib/moment.min.js", "utf8");
-let favicon = fs.readFileSync("./assets/favicon.ico", "utf8");
+let favicon = fs.readFileSync("./assets/favicon.ico");
 
 // Nếu bạn build ra file với tên cố định
 // html = html.replace("./assets/style.css", "./assets/style.css");
