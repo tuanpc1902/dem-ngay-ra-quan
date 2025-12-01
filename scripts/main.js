@@ -5,6 +5,7 @@ const defaultDate = '2026-01-28';
 let ngayRaQuanDatePicker = document.getElementById('ngayRaQuanDatePicker');
 let ngayRaQuan = document.getElementById('ngayRaQuan');
 let localStorageValue = localStorage.getItem('ngayRaQuanDatePicker');
+let videoCSTT = localStorage.getItem('videoCSTT');
 
 console.log('localStorageValue', localStorageValue);
 

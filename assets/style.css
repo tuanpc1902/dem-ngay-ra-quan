@@ -185,6 +185,11 @@ body {
   #pipe {
     display: none;
   }
+
+  #videoCSTT {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /* Màn nhỏ 320px (iPhone SE, Android đời cũ) */
@@ -210,5 +215,10 @@ body {
 
   .clock {
     font-size: 15px;
+  }
+
+  #videoCSTT {
+    width: 100%;
+    height: auto;
   }
 }
