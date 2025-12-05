@@ -15,7 +15,8 @@
   "type": "commonjs",
   "main": "main.js",
   "scripts": {
-    "build": "concurrently --kill-others \"esbuild main.js --bundle --minify --outfile=dist/main.min.js\" \"esbuild main.css --bundle --minify --outfile=dist/assets/main.min.css\" \"esbuild style.css --bundle --minify --outfile=dist/assets/style.min.css\"",
+    "build": "build.js",
+    "dev": "concurrently --kill-others \"esbuild main.js --bundle --minify --outfile=dist/main.min.js\" \"esbuild main.css --bundle --minify --outfile=dist/assets/main.min.css\" \"esbuild style.css --bundle --minify --outfile=dist/assets/style.min.css\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
